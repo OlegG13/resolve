@@ -23,16 +23,7 @@ import {ContactResolve} from './contact-resolve.service';
   ],
   providers: [
     ContactsService,
-    ContactResolve,    {
-      provide: 'contactresolve',
-      useValue: () => {
-        return {
-          id: 1,
-          name: 'Oleg Gubich',
-          twitter: '@PascalPrecht'
-        }
-      }
-    }
+    ContactResolve
   ],
   bootstrap: [AppComponent]
 })
