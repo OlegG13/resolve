@@ -9,8 +9,8 @@ export const AppRoutes: Routes = [
     path: 'contact/:id',
     component: ContactDetailComponent,
     resolve: {
-      //contact: 'contactresolve'
-      contact: ContactResolve
+      contact: 'contactresolve'
+      //contact: ContactResolve
     }
   }
 ];
